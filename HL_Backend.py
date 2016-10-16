@@ -1,12 +1,14 @@
 from flask import Flask
 import time
+import os, math
+
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello_world():
-    time.sleep(2)
+    math.factorial(33900)
     return 'Hello World!'
 
 
